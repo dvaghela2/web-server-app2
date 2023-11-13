@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Web Bank</title>
+   <link rel="stylesheet" type="text/css" href="/css/style.css" />
+   <script type="text/javascript" src="./js/bank.js"></script>
+</head>
+
+<body>
+   {{>header}}
+   <h2>Open Account</h2>
+
+   <article id="openaccount-box">
+      <Label>Enter the type of account:</Label>  </br></br>
+         
+      <form method="POST" action="/account" id="openaccountform">
+      
+         {{#if body.hasnone}}
+         <input name="type" checked="true" type="radio" id="cheque" value="Chequing">
+         <label for="cheque">Chequing</label>
+         <input type="radio" name="type" id="saving" value="Savings">
+         <label for="saving">Savings</label>
+         </br></br>
+         <button id="btn" class="mainbtn" type="submit">Submit</button>
+         {{/if}}
+
+         {{#if body.hascheque}}
+
+         <input type="radio" checked="true" name="type" id="saving" value="Savings">
+         <label for="saving">Savings</label>
+         <br></br>
+
+         <button id="btn" class="mainbtn" type="submit">Submit</button>
+         {{/if}}
+         {{#if body.hassavings}}
+
+         <input type="radio" checked="true" name="type" id="cheque" value="Chequing">
+         <label for="cheque">Chequing</label>
+         </br></br>
+
+         <button id="btn" class="mainbtn" type="submit">Submit</button>
+         {{/if}}
+
+
+
+      </form>
+
+      <section>
+         <form action="/cancel" method="get">
+            <input class="mainbtn" type="submit" value="Cancel">
+         </form>
+
+      </section>
+
+
+   </article>
+
+
+</body>
+
+</html>

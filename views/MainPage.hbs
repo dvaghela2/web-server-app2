@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+
+  <title>Web Bank</title>
+  <link rel="stylesheet" type="text/css" href="/css/style.css" />
+  <script type="text/javascript" src="./js/bank.js"></script>
+</head>
+
+<body class="mainbody">
+
+  <header>
+    <article>
+      {{>header}}
+      <form method="POST" id="logout" action="/logout">
+        <button class="logoutbtn" id="text_display" onclick="myLogout()">Logout</button>
+      </form>
+    </article>
+  </header>
+
+
+  <nav class="accountinfo">
+    
+    <form action="/checkchoice" method="POST" id="bankform">
+      <h3>Operations Menu</h3>
+     
+      
+      <label>Account numbers available:</label> </br>
+      <select id="useraccountnum" name="accountNumber">
+        <option value="" disabled selected>Select an account</option>
+        {{#if body.cheque}}
+        <option value="{{{body.cheque}}}">{{{body.cheque}}}</option>
+        {{/if}}
+
+        {{#if body.savings}}
+        <option value="{{{body.savings}}}">{{{body.savings}}}</option>
+        {{/if}}
+      </select>
+
+      </br></br>
+      <label>What you want to do?</label> </br></br>
+      <input type="radio" id="balance" name="account" value="balance">
+      <label for="balance">Balance</label>
+      <input type="radio" id="deposit" name="account" value="deposit">
+      <label for="deposit">Deposit</label>
+      </br></br>
+      <input type="radio" id="withdrawal" name="account" value="withdrawal">
+      <label for="withdrawal">Withdrawal</label>
+      {{#if body.hasboth}}
+
+      <input type="radio" id="openaccount" disabled="true" name="account" value="openaccount">
+      <label for="withdrawal">Open Account</label>
+      {{else}}
+      <input type="radio" id="openaccount" checked="true" name="account" value="openaccount">
+      <label for="withdrawal">Open Account</label>
+      {{/if}}
+
+      </br></br>
+      {{{body.text}}}
+      </br></br>
+
+      <button id="btn" class="mainbtn" type="submit">Submit</button>
+    </form>
+  </nav>
+
+
+
+
+</body>
+
+</html>

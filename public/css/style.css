@@ -1,0 +1,270 @@
+.loginbody {
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-color: #974444;
+}
+
+.mainbody {
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-color: #974444;
+}
+
+
+#login-box {
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+    background: #3498db;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#login-box h1 {
+    color: #2c3e50;
+}
+
+#login-box .form .item input {
+    margin-top: 15px;
+    width: 100%;
+    font-size: 16px;
+    border: 0;
+    border-bottom: 2px solid #2c3e50;
+    padding: 10px;
+    background: #ecf0f1;
+    color: #34495e;
+}
+
+#login-box .form i {
+    font-size: 16px;
+    color: #2c3e50;
+}
+
+#login-box button {
+    margin-top: 20px;
+    width: 100%;
+    height: 40px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    background: linear-gradient(to right, #16a085 0%, #020405 100%);
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+
+.logoutbtn {
+    border: none;
+    background-color: blueviolet;
+    color: #0e1113;
+    font-size: 20px;
+    cursor: pointer;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: 10px;
+}
+
+.logoutbtn:hover {
+    background-color: rgb(49, 163, 33);
+}
+
+
+h3 {
+    color: #070402;
+    font-size: 24px;
+    margin-top: 75px;
+    font-weight: bold;
+}
+
+
+
+.mainbtn {
+    margin-top: 15px;
+    width: 280px;
+    height: 40px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #974444;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: -55px;
+}
+
+.mainbtn:hover {
+    background-color: #3498db;
+    /* Change background color on hover */
+    color: #fff;
+    border-color: #3498db;
+    /* Change border color on hover */
+}
+
+
+.logintext {
+    margin-top: 20px;
+    color: white;
+}
+
+header {
+    color: white;
+}
+
+.mainbody {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#box {
+    width: 100px;
+    margin-left: 1200px;
+    text-align: right;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+
+}
+
+.accountinfo {
+    width: 30%;
+    background-color: #16a085;
+    text-align: left;
+    margin-left: 400px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    padding-left: 170px;
+    border-radius: 10px;
+
+}
+
+#useraccountnum {
+    width: 70%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+    margin-left: -45px;
+
+}
+
+#useraccountnum option {
+    font-size: 16px;
+    background-color: #fff;
+    color: #333;
+}
+
+useraccountnum option:checked {
+    background-color: #3498db;
+    color: #fff;
+}
+
+
+.custom-label:hover {
+    background-color: #3498db;
+    color: #fff;
+}
+
+
+
+input[type="radio"]:checked+label {
+    background-color: #3498db;
+    color: #fff;
+}
+
+#openaccount-box {
+    width: 20%;
+    margin: 50px auto;
+    padding: 100px;
+    background-color: #656f72;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#withdraw-box {
+    width: 40%;
+    margin: 50px auto;
+    padding: 50px;
+    /* padding-left: 100px; */
+    background-color: #656f72;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#withdrawalform {
+    margin-top: -70px;
+    width: 50%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ecf0f1;
+    /* Light background color */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Subtle box shadow for depth */
+}
+
+.withdrawalform {
+    margin-top: -100px;
+    width: 50%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ecf0f1;
+    /* Light background color */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Subtle box shadow for depth */
+}
+
+#Account {
+    color: #020405;
+}
+
+.Account {
+    color: #020405;
+}
+
+.Error {
+    color: #e41732;
+}
+
+.Cancel {
+    width: 100%;
+    padding: 10px;
+    background-color: #656f72;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+
+div {
+    color: white;
+
+}
+
+section {
+    color: white;
+}
+
+label {
+    color: white;
+}

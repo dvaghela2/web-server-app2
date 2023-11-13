@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Bank</title>
+  <link rel="stylesheet" type="text/css" href="/css/style.css" />
+  <script type="text/javascript" src="./js/bank.js"></script>
+</head>
+
+<body>
+  <h1> {{>header}}</h1>
+  <h2>Withdraw</h2>
+  <article id="withdraw-box">
+
+
+    <form method="POST" id="withdrawalform">
+
+      <div id="Account" value={{body.number}}>Account Number: {{body.number}}
+      </div>
+      <span>Account Type: {{body.type}}</span> </br>
+      <span>Balance: ${{body.amount}}</span> </br> </br>
+
+      <Label class="Account">Enter the amount you want to withdraw:</Label>
+
+      <input type="text" name="withdrawal" placeholder="Withdrawal" /></br>
+      <input type="hidden" id="account" name="account" />
+      <section >
+        <label class="Error">{{body.text}}</label>
+      </section>
+
+      <button id="btn" class="btnSubmit" onclick="Withdrawal()">Submit</button>
+
+      
+
+    </form>
+    <form action="/cancel" method="get" id="withdrawalform">
+        <input class="Cancel" type="submit" value="Cancel">
+     </form>
+
+
+  </article>
+
+
+</body>
+
+</html>
